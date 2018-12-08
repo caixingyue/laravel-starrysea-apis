@@ -1,0 +1,38 @@
+{
+    "name": "starrysea/apis",
+    "description": "Chained api data processing, automatically combining json data based on data",
+    "homepage": "https://github.com/caixingyue/laravel-starrysea-apis",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "caixingyue",
+            "email": "917373332@qq.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/caixingyue/laravel-starrysea-apis/issues"
+    },
+    "require": {
+        "php": "^7.0"
+	},
+	"autoload": {
+        "psr-4": {
+            "Starrysea\\Apis\\": "src"
+        }
+    },
+	"autoload-dev": {
+        "psr-4": {
+            "Starrysea\\Apis\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Starrysea\\Apis\\ApisServiceProvider"
+            ],
+            "aliases": {
+                "Apis": "Starrysea\\Apis\\Apis"
+            }
+        }
+    }
+}
